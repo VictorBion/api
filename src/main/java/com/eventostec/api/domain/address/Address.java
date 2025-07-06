@@ -1,6 +1,7 @@
 package com.eventostec.api.domain.address;
 
 import com.eventostec.api.domain.event.Event;
+import com.eventostec.api.repositories.AddressRepository;
 import jakarta.persistence.*;
 
 import java.util.UUID;
