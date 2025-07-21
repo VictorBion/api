@@ -67,6 +67,11 @@
 			<artifactId>flyway-database-postgresql</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk-s3</artifactId>
+			<version>1.12.696</version> <!-- ou a mais recente -->
+		</dependency>
 
 	</dependencies>
 
@@ -96,7 +101,12 @@
 					</excludes>
 				</configuration>
 			</plugin>
-		</plugins>
+					<plugin>
+						<groupId>org.flywaydb</groupId>
+						<artifactId>flyway-maven-plugin</artifactId>
+						<version>9.22.3</version> <!-- Ou a versão mais recente -->
+					</plugin>
+				</plugins>
 	</build>
 
 </project>
